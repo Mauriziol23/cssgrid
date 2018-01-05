@@ -1,0 +1,37 @@
+            .container {
+                display: grid;
+                grid-gap: 2px;
+                /* This says we want 2 columns and 2 rows and the 1fr allows it to be adjustable */
+                grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+                grid-template-rows: repeat(2, 345px);
+                /* height: 100%; */
+                justify-content: center;
+                align-content: center;
+            }
+
+            .header {
+                list-style-type: none;
+                color: black;
+            }
+
+            .box {
+                display: flex;
+                height: 50%;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+            }
+
+            .image {
+                display: grid;
+                grid-gap: 2px;
+                background-color: black;
+                /* This says we want 2 columns and 2 rows and the 1fr allows it to be adjustable */
+                /* grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 172.5px); */
+                /* height: 50%; */
+                width: 85%;
+                justify-content: center;
+                align-content: center;
+                object-fit: cover;
+            }
